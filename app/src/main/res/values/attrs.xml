@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerticalTextView">
+        <!-- 显示的文本-->
+        <attr name="text" format="string" />
+
+        <!-- 字体大小 -->
+        <attr name="textSize" format="dimension" />
+
+        <!-- 字体颜色 -->
+        <attr name="textColor" format="color" />
+
+        <!-- 开始方向 -->
+        <attr name="start_orientation" format="enum">
+            <!-- 从左至右 -->
+            <enum name="left" value="1" />
+            <!-- 从右至左 -->
+            <enum name="right" value="2" />
+        </attr>
+
+        <!-- 分割线类型 -->
+        <attr name="line_type" format="enum">
+            <!-- 无分割线 -->
+            <enum name="none" value="0" />
+            <!-- 实体线 -->
+            <enum name="real" value="1" />
+            <!-- 虚线 -->
+            <enum name="dotted" value="2" />
+        </attr>
+
+        <!-- 字体样式 -->
+        <attr name="text_style" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+            <enum name="bold_italic" value="3"/>
+            <enum name="default_bold" value="4"/>
+            <enum name="v_default" value="5"/>
+            <enum name="sans_serif" value="6"/>
+            <enum name="monospace" value="7"/>
+            <enum name="serif" value="8"/>
+        </attr>
+
+        <!-- 字体类型 -->
+        <attr name="text_font" format="string"/>
+
+        <!-- 显示动画类型 -->
+        <attr name="show_anim_type" format="enum">
+            <!-- 无动画 -->
+            <enum name="none" value="0"/>
+            <!-- 逐字显示 -->
+            <enum name="once" value="1"/>
+            <!-- 逐列显示 -->
+            <enum name="column" value="2"/>
+            <!-- 逐行显示 -->
+            <enum name="row" value="3"/>
+            <!-- 全部显示 -->
+            <enum name="all" value="4"/>
+        </attr>
+
+        <!-- 动画执行时间 -->
+        <attr name="showTimeCount" format="integer"/>
+
+        <!-- 当分割线为虚线时，虚线中每一段小线的高度 -->
+        <attr name="dotted_line_height" format="dimension"/>
+
+        <!-- 当分割线为虚线时，虚线中每一段小线与小线之间的间隔 -->
+        <attr name="dotted_line_margin" format="dimension"/>
+
+        <!-- 分割线宽度 -->
+        <attr name="lineWidth" format="dimension" />
+
+        <!-- 分割线颜色 -->
+        <attr name="lineColor" format="color" />
+
+        <!-- 每列字与字的间隔 -->
+        <attr name="textVerticalMargin" format="dimension" />
+
+        <!-- 列与列的间隔 -->
+        <attr name="textHorizontalMargin" format="dimension" />
+
+        <!-- 是否支持对某一些文本的标注 -->
+        <attr name="isLabel" format="boolean"/>
+
+        <!-- 标注文本的下标 如果要标注多个，以逗号分隔   例：1,2,3,4 -->
+        <attr name="labelIndex" format="string" />
+
+        <!-- 标注的颜色 -->
+        <attr name="labelColor" format="color"/>
+
+        <!--但文本字数所计算出来的列数的宽度，大于组件自身宽度时，是否可以支持滑动，若不支持，用省略号代替-->
+        <attr name="isMove" format="boolean"/>
+    </declare-styleable>
+</resources>
